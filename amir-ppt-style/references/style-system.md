@@ -1,5 +1,9 @@
 # Amir PPT Style System
 
+## Portability
+
+This reference is a tool-agnostic design system. It can be used by any agent that can create slides, HTML decks, visual mockups, or slide-by-slide design plans. Do not require access to the original source PPT files. Use the patterns below as reusable design rules.
+
 ## Source Pattern
 
 This system is distilled from five 8-slide decks: product launch, media kit, investor deck, proposal deck, and campaign deck. The common language is not a conventional template. It is closer to editorial art direction: large type, high-contrast page rhythm, minimal but precise content blocks, and one strong visual motif per deck.
