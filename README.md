@@ -116,7 +116,9 @@ Recommended fonts: Geist, Inter, DM Sans, Space Grotesk, Fraunces.
 
 ## How to Use This Skill / 如何使用这个 Skill
 
-Use the skill folder in this repo:
+This repo is designed to be portable. Any agent that supports skill folders can use it by copying the `amir-ppt-style/` folder into its own skills directory.
+
+这个仓库已经整理成通用 skill。只要对方的 Agent 支持读取 skill 文件夹，就可以把 `amir-ppt-style/` 整个文件夹复制到自己的 skills 目录里使用。
 
 ```text
 amir-ppt-style/
@@ -124,6 +126,44 @@ amir-ppt-style/
 ├── agents/openai.yaml
 └── references/style-system.md
 ```
+
+### For Codex / 适用于 Codex
+
+Copy the `amir-ppt-style/` folder into your Codex skills directory, then restart or refresh Codex.
+
+把 `amir-ppt-style/` 文件夹复制到 Codex 的 skills 目录，然后重启或刷新 Codex。
+
+Typical locations:
+
+```text
+~/.codex/skills/amir-ppt-style/
+```
+
+### For Other Agents / 适用于其他 Agent
+
+If your agent supports skill folders, copy the whole folder.
+
+如果你的 Agent 支持 skill 文件夹，复制整个文件夹即可。
+
+If your agent does not support folders, paste both files into the agent's instruction/context area:
+
+如果你的 Agent 不支持文件夹结构，可以把下面两个文件内容复制进 Agent 的指令或上下文里：
+
+```text
+amir-ppt-style/SKILL.md
+amir-ppt-style/references/style-system.md
+```
+
+### Capability Requirement / 能力要求
+
+This skill is a design system, not a PowerPoint engine. The agent still needs one of these abilities:
+
+这个 skill 是设计系统，不是独立的 PPT 软件。使用它的 Agent 仍然需要具备以下任一能力：
+
+- create or edit PPTX files / 创建或编辑 PPTX
+- create HTML slide decks / 创建 HTML 幻灯片
+- generate slide-by-slide design plans / 生成逐页设计方案
+- produce images or mockups for slide layouts / 生成页面视觉稿
 
 Example prompts:
 
